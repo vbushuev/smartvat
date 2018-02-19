@@ -1,0 +1,16 @@
+{
+    "1": {
+        "shopName": "Prada",
+        "status": "Pending",
+        "dateAdded": "Mercredi",
+        "amount": 20,
+        "amountCcy": "EUR"
+    },
+    "2": {
+        "shopName": "Nike shopt",
+        "status": "Pending",
+        "dateAdded": "Jeudi",
+        "amount": 120,
+        "amountCcy": "EUR"
+    }
+}

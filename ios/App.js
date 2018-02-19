@@ -41,7 +41,7 @@ export default class App extends Component {
 
         return (
             <Provider store={store}>
-                    <Router/>
+                <Router/>
             </Provider>
         );
     }
