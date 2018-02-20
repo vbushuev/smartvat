@@ -24,10 +24,10 @@ const fontSize = {
 }
 
 const fontFamily = {
-    bold: "RobotoBold",
-    medium: "RobotoMedium",
-    regular: "RobotoRegular",
-    light: "RobotoLight",
+    bold: "Roboto-Bold",
+    medium: "Roboto-Medium",
+    regular: "Roboto-Regular",
+    light: "Roboto-Light",
 }
 
 const padding = 8;

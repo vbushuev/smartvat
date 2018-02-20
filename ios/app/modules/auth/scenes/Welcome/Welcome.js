@@ -4,7 +4,7 @@ import { Text, View, TouchableOpacity, Image } from 'react-native';
 import { Button, SocialIcon, Divider } from 'react-native-elements'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux';
-import { Facebook } from 'expo';
+// import { Facebook } from 'expo';
 
 import { actions as auth, constants as c } from "../../index"
 const { signInWithFacebook } = auth;
@@ -27,7 +27,7 @@ class Welcome extends React.Component {
     //get users permission authorization (ret: facebook token)
     async onSignInWithFacebook() {
         const options = {permissions: ['public_profile', 'email'],}
-        const {type, token} = await Facebook.logInWithReadPermissionsAsync(c.FACEBOOK_APP_ID, options);
+        // const {type, token} = await Facebook.logInWithReadPermissionsAsync(c.FACEBOOK_APP_ID, options);
 
         if (type === 'success') {
             this.props.signInWithFacebook(token, this.onSuccess, this.onError)
