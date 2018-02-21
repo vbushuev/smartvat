@@ -12,6 +12,9 @@ import CompleteProfile from '../modules/auth/scenes/CompleteProfile';
 import Login from '../modules/auth/scenes/Login';
 import ForgotPassword from '../modules/auth/scenes/ForgotPassword';
 
+import HomeTest from '../modules/home/scenes/HomeTest';
+import VATCamera from '../modules/home/scenes/VATCamera';
+
 //Import Store, actions
 import store from '../redux/store'
 import { checkLoginStatus } from "../modules/auth/actions";
@@ -54,7 +57,8 @@ export default class extends React.Component {
                     </Stack>
 
                     <Stack key="Main" initial={this.state.isLoggedIn}>
-                        <Scene key="Home" component={() => <View/>} title="Home" initial={true} type={ActionConst.REPLACE}/>
+                        <Scene key="Home" component={HomeTest} title="Home" initial={true}/>
+                        <Scene key="VATCamera" component={VATCamera} title="Camera" hideNavBar/>
                     </Stack>
                 </Scene>
             </Router>

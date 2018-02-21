@@ -68,3 +68,16 @@ export function signOut (callback) {
             if (callback) callback(false, null, error)
         });
 }
+
+
+//FireBase funcs
+export function testFirebaseSet(id,data){
+    return database.ref('/'+id).set(data);
+}
+export function testFirebaseRetrive(id,callback){
+    database.ref('/'+id).on('value',(snapshot)=>{
+        if(snapshot.val()){
+            callback(snapshot.val());
+        }
+    });
+}

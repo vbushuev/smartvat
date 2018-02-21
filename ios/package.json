@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "firebase": "^4.10.0",
+    "jest": "^22.4.0",
     "moment": "^2.20.1",
     "react": "16.2.0",
     "react-native": "^0.53.0",
@@ -34,10 +35,10 @@
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
-    },
-    "rnpm": {
-        "assets": [
-    	"./app/assets/fonts/"
-        ]
-    }
+  },
+  "rnpm": {
+    "assets": [
+      "./app/assets/fonts/"
+    ]
+  }
 }

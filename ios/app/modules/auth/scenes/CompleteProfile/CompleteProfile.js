@@ -1,11 +1,11 @@
-import React from 'react';
+на import React from 'react';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
 
 import { actions as auth } from "../../index"
 const { createUser } = auth;
 
-import VATCamera from "../../../home/components/VATCamera"
+
 
 import Form from "../../components/Form"
 import AuthContainer from "../../components/AuthContainer"
