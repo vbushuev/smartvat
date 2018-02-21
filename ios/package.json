@@ -15,7 +15,8 @@
     "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": ["node_modules/(?!react-native|native-base|react-navigation|react-native-fabric)"]
   },
   "dependencies": {
     "axios": "^0.17.1",
